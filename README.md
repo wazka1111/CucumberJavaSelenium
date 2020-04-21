@@ -20,11 +20,15 @@ The project contains following items:
 *  Cluecumber
 
     	
-This simple BDD test framework operates on web page: http://5.196.7.235/
+This simple BDD test framework operates on web page: **http://5.196.7.235/**
 I have prepared following scenarios:
-    1.	Test scenario – where I want to present basic Cucumber functions
-    2.	Login scenario – where I want to login to user account
-    3.	Purchase scenario – where I want to order men’s Tshirt.
+    
+  	
+* [ ]  Test scenario – where I want to present basic Cucumber functions
+  	
+* [ ]  Login scenario – where I want to login to user account
+    
+* [ ]  Purchase scenario – where I want to order men’s Tshirt.
 
 
 
