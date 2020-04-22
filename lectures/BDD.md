@@ -164,7 +164,7 @@ For more details refer to:
 
 Let’s assume that you need run your scenario couple of times for different test data values. Cucumber provides Scenario Outline concept in order to achieve that. Instead of Scenario we need define Scenario Outline along with Examples section. Let’s see how it looks like in feature file:
 
-
+![datTable1](./img/bdd/scenariooutline.jpg)
 
 Cucumber will recognize how many rows are defined in Examples table and test will be executed this number of times – in my example: 4
 
@@ -175,44 +175,17 @@ Scenarios will be executed only if respective step definitions are created. Ther
 1. In the feature file use Intelij prompt and click “Create step definition” option:
 
 
-
-
+![datTable1](./img/bdd/stepdef.jpg)
 
 
 
 2. Right click on feature file and select “Run Feature file”. After execution jump to Run panel in Intelij and see results. Cucumber should inform you that steps are not implemented. Copy this content and paste to separate class in the following location: src/test/stepDefinition/LoginSteps.class
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![datTable1](./img/bdd/stepdefimplementation.jpg)  
 
 
 Here is LoginSteps.class:
 
-
+![datTable1](./img/bdd/classstepdefinition.jpg)
 
 
