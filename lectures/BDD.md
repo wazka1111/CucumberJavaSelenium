@@ -47,11 +47,11 @@ Should I create steps using first person position? (When I input login into the 
 
 or rather third person position (When User input his login into the system)
 
-**My recommendation – third person position**
+        **My recommendation – third person position**
 
 2. Should I use imperative or declarative communication type in my scripts?
-
-**My recommendation – declarative type.**
+ 
+        **My recommendation – declarative type.**
 
 What is the difference?
 
@@ -81,85 +81,23 @@ What is the difference?
 Take a look at other example in my project:
 Here is imperative style. There are so many steps related to order some product:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![imperative](./img/bdd/badPracticePurchaseFeature.jpg)
 
 
 and on the other hand declarative style. This is the same scenario but more concise and readable:
 
+![imperative](./img/bdd/badPracticePurchaseFeature2.jpg)
  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 For more details refer to:
-•	https://cucumber.io/docs/bdd/better-gherkin/
+[Cucumber documentation](https://cucumber.io/docs/bdd/better-gherkin/)	
 
 
 Feature file is strictly related to step definition. 
 Here is relations between feature file, step definitions and application:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+![graph](./img/bdd/arch.jpg)
 
 
 
