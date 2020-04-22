@@ -35,4 +35,6 @@ I have prepared following scenarios:
 # Agenda
 
 ## 1. [Installation maven](./lectures/installation.md)
+## 2. [Behavior-driven development (BDD) - introduction](./lectures/BDD.md)
+
 
