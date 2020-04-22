@@ -108,15 +108,7 @@ Along with step declaration you can define additional specific data related to t
 Here is snippet from .feature file:
 
 
-
-
-
-
-
-
-
-
-
+![datTable1](./img/bdd/int.jpg)
 
 
 
@@ -126,18 +118,14 @@ Using DataTable object you can use those numbers in your test method.
 Base on that let’s create step definition class:
 
 
-
-
-
-
-
+![datTable1](./img/bdd/datatable.jpg)
 
 
 
 
 From Cucumber version 5 you can achieve the same result using this step definition. In this case, the DataTable is automatically flattened to a List<Integer> by Cucumber (using DataTable.asList(Integer.class)) before invoking the step definition. 
 
-
+![datTable1](./img/bdd/datatable2.jpg)
 
 
 
