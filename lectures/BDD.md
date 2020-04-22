@@ -2,61 +2,81 @@
 
 ### Gherkin style
 
-  Gherkin is a specific syntax that makes plain text structured enough for Cucumber to understand. Cucumber matches Gherkin steps into respective code snippets in Selenium (step definitions) using regular expressions behind the scenes.
+  Gherkin is a specific syntax that makes plain text structured enough for Cucumber to understand. Cucumber matches Gherkin steps into respective code snippets in Selenium (step definitions) using regular expressions behind the scene.
+  
 Gherkin serves multiple purposes:
-•	Recommendation for analysts to use Gherkin in order to create unambiguous specification (requirements)
-•	Makes automated scripts flow clear and easy to follow
-•	Test scripts becomes automatically useful documentation that indicate how the system actually behaves
+
+*  Recommendation for analysts to use Gherkin in order to create unambiguous specification (requirements)
+*  Makes automated scripts flow clear and easy to follow
+*  Test scripts becomes automatically useful documentation that indicate how the system actually behaves
 Gherkin documents are stored in .feature text files and are crucial part of the project: eg:
 Login.feature
-TIP! 
+
+**TIP!**
 Files .feature should be stored in separate package within project structure. 
 
 ### Feature file
 
 
 Here is example of feature file content:
-Feature: Here type name of the feature that you are testing
-Scenario: Here type name of the test that you are going to create
-Given Here type preconditions that have to be prepared before the test
-When Here type action/actions that you need to do in order to complete your test
-Then Here type verifications/assertions that you need to perform. 
+
+        Feature: Here type name of the feature that you are testing
+        Scenario: Here type name of the test that you are going to create
+        Given Here type preconditions that have to be prepared before the test
+        When Here type action/actions that you need to do in order to complete your test
+        Then Here type verifications/assertions that you need to perform. 
+
 
 Additionally we can use “And” to extend one of the steps:
 eg:
-Given Step text
-And Extend step
-When Step text
-And Step text
-Then Step text
-And Step text
 
-Best practice:
+        Given Step text
+        And Extend step
+        When Step text
+        And Step text
+        Then Step text
+        And Step text
+
+
+**Best practice:**
+
 It is not mandatory but part of best practice only. 
-1. Here is a question: Should I create steps using first person position: (When I input login into the system) or rather third person position (When User input his login into the system)
-My recommendation – third person position
+1. Here is a question:
+
+Should I create steps using first person position? (When I input login into the system) 
+
+or rather third person position (When User input his login into the system)
+
+**My recommendation – third person position**
 
 2. Should I use imperative or declarative communication type in my scripts?
-My recommendation – declarative type.
+
+**My recommendation – declarative type.**
 
 What is the difference?
-Imperative means each step is a precise instruction. The inputs and expected results are specified exactly. It might cause problem after any modification in the system. 
-Declarative means each step communicates an idea, but the exact values aren’t specified. It assumes more flexible way to define steps. 
-Examples:
-Imperative style:
-Feature:  Free subscribers see only the free movies 
-Given users with a free subscription can access "Open movies" but not "Premium movies" 
-When I type "openUser@domain.com" in the email field 
-And I type "passwd123" in the password field 
-And I press the "Login" button 
-Then I see "Open movies" on the home page 
-And I do not see "Premium movies" on the home page
 
-Declarative style – RECOMMENDED :
-Feature:  Free subscribers see only the free movies 
-Given Free Monica has a free/open subscription
-When Free Monica logs in with her valid credentials
-Then Free Monica sees a only open movies on the home page 
+**Imperative** means each step is a precise instruction. The inputs and expected results are specified exactly. It might cause problem after any modification in the system.
+
+**Declarative** means each step communicates an idea, but the exact values aren’t specified. It assumes more flexible way to define steps. 
+
+##### Examples:
+
+**Imperative style:**
+
+        Feature:  Free subscribers see only the free movies 
+        Given users with a free subscription can access "Open movies" but not "Premium movies" 
+        When I type "openUser@domain.com" in the email field 
+        And I type "passwd123" in the password field 
+        And I press the "Login" button 
+        Then I see "Open movies" on the home page 
+        And I do not see "Premium movies" on the home page
+
+**Declarative style – RECOMMENDED :**
+
+        Feature:  Free subscribers see only the free movies 
+        Given Free Monica has a free/open subscription
+        When Free Monica logs in with her valid credentials
+        Then Free Monica sees a only open movies on the home page 
 
 Take a look at other example in my project:
 Here is imperative style. There are so many steps related to order some product:
