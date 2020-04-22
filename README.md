@@ -31,8 +31,7 @@ I have prepared following scenarios:
     
 * [x]  Purchase scenario – where I want to order men’s Tshirt.
 
-
 #Agenda
 
-### 1. [Installation maven](./lectures/installation.md)
+## 1. [Installation maven](./lectures/installation.md)
 
