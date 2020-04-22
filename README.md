@@ -25,11 +25,14 @@ This simple BDD test framework operates on web page: **http://5.196.7.235/**
 I have prepared following scenarios:
     
   	
-* [ ]  Test scenario – where I want to present basic Cucumber functions
+* [x]  Test scenario – where I want to present basic Cucumber functions
   	
-* [ ]  Login scenario – where I want to login to user account
+* [x]  Login scenario – where I want to login to user account
     
-* [ ]  Purchase scenario – where I want to order men’s Tshirt.
+* [x]  Purchase scenario – where I want to order men’s Tshirt.
 
 
+#Agenda
+
+[1. Installation - maven](maven)
 
