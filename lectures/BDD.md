@@ -130,39 +130,20 @@ From Cucumber version 5 you can achieve the same result using this step definiti
 
 
 
-
-
-
 For more details refer to:
-•	https://cucumber.io/docs/cucumber/api/?sbsearch=Data%20Table
+[Cucumber documentation](https://cucumber.io/docs/cucumber/api/?sbsearch=Data%20Table)
+
 
 
 Next take a look at the number 600 in .feature file. This time this data is a part of the step description. If you want use this number in step definition method you can put {int} expression:
 
-
-
-
-  
-
-
-
-
-
-
-
+![datTable1](./img/bdd/datatable3.jpg)
 
 
 
 Also you can use {string} expression in order to send some string data type. Please pay attention on single-quoted or double-quoted strings:
 
- 
-
-
-
-
-
-
-
+![datTable1](./img/bdd/string.jpg)
 
 
 
@@ -170,17 +151,13 @@ Also you can use {string} expression in order to send some string data type. Ple
 and respective step definition:
 
 
+![datTable1](./img/bdd/string2.jpg)
 
 
 
 
-
-
-
-
-
-For more information refer to:
-•	https://cucumber.io/docs/cucumber/cucumber-expressions/#parameter-types
+For more details refer to:
+[Cucumber documentation](https://cucumber.io/docs/cucumber/cucumber-expressions/#parameter-types)
 
 
 ### Scenario outline
