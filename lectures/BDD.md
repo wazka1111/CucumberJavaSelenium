@@ -1,6 +1,6 @@
 # 2. Behavior-driven development (BDD) - introduction
 
-Gherkin style
+### Gherkin style
 
   Gherkin is a specific syntax that makes plain text structured enough for Cucumber to understand. Cucumber matches Gherkin steps into respective code snippets in Selenium (step definitions) using regular expressions behind the scenes.
 Gherkin serves multiple purposes:
@@ -12,7 +12,7 @@ Login.feature
 TIP! 
 Files .feature should be stored in separate package within project structure. 
 
-- Feature file
+### Feature file
 
 
 Here is example of feature file content:
@@ -143,7 +143,7 @@ Here is relations between feature file, step definitions and application:
 
 
 
-- Data table
+### Data table
 
 Along with step declaration you can define additional specific data related to test case (type String, Integer, Float, Double, Byte, Short, Long, BigInteger or BigDecimal)  
 
@@ -237,7 +237,7 @@ For more information refer to:
 •	https://cucumber.io/docs/cucumber/cucumber-expressions/#parameter-types
 
 
-- Scenario outline
+### Scenario outline
 
 Let’s assume that you need run your scenario couple of times for different test data values. Cucumber provides Scenario Outline concept in order to achieve that. Instead of Scenario we need define Scenario Outline along with Examples section. Let’s see how it looks like in feature file:
 
@@ -246,7 +246,8 @@ Let’s assume that you need run your scenario couple of times for different tes
 Cucumber will recognize how many rows are defined in Examples table and test will be executed this number of times – in my example: 4
 
 
-- Step definition
+### Step definition
+
 Scenarios will be executed only if respective step definitions are created. There are two ways to create step definition content. Let’s see how to do that:
 1. In the feature file use Intelij prompt and click “Create step definition” option:
 
