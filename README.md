@@ -34,5 +34,5 @@ I have prepared following scenarios:
 
 #Agenda
 
-[1. Installation - maven](instalation_maven)
+[1. Installation - maven](lectures/installation_maven.md)
 
