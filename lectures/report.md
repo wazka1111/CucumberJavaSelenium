@@ -15,26 +15,59 @@ Now let’s make some update in our project and configure Cluecumber.
 
 1. Update pom.xml file and made plugin configuration:
 
+![report](./img/bdd/pom.jpg)
 
-<plugin>
-    <groupId>com.trivago.rta</groupId>
-    <artifactId>cluecumber-report-plugin</artifactId>
-    <version>2.3.4</version>
-    <executions>
-        <execution>
-            <id>report</id>
-            <phase>post-integration-test</phase>
-            <goals>
-                <goal>reporting</goal>
-            </goals>
-        </execution>
-    </executions>
-    <configuration>
-        <sourceJsonReportDirectory>${project.build.directory}/cucumberReport</sourceJsonReportDirectory>
-        <generatedHtmlReportDirectory>${project.build.directory}/generated-report</generatedHtmlReportDirectory>
-        <customPageTitle>Selenium advance tutorial from Sii</customPageTitle>
-    </configuration>
-</plugin>
+
+Please look at `<configuration>` section.
+Here you can define your custom requirements. Mandatory entries are:
+
+
+*  `sourceJsonReportDirectory` – Indicate directory where json file is stored after execution
+
+*  `generatedHtmlReportDirectory` - Indicate directory where final HTML file report will be stored after execution. This report is created based on json defined in sourceJsonReportDirectory
+
+Additionally you can define following details:
+
+
+*  test name
+*  log level
+*  css file for new format of the report
+*  custom properties and many more
+
+For more details look at:  
+[Cluecumber report](https://github.com/trivago/cluecumber-report-plugin)
+
+
+
+2. In order to give suggestion to Cucumber where is json file you need to add @Cucumber Option()
+
+@CucumberOptions( plugin = {"json:target/cucumberReport/cucumber.json"},
+
+3. Run your tests using RunTest class (this class is annotated by @CucumberOptions)
+
+4. Using Terminal panel in Intelij run this command to generate HTML report based on json file:
+
+        mvn cluecumber-report:reporting
+        
+        
+![report](./img/bdd/terminal.png)
+
+
+
+
+5. In order to see report navigate to location defined in pom.xml
+In most cases it is target folder within the project. 
+Open in any browser index.html file:
+
+![report](./img/bdd/index.png)
+
+
+
+6. Here is example of report view:
+
+![report](./img/bdd/report.png) 
+
+
 
 
 
