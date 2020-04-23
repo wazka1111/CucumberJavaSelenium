@@ -1,4 +1,4 @@
-# 1. Maven
+## 1. Maven
 
 Now let’s take a look at dependencies within the project. We are going to use Maven tool to manage all external libraries. Take a look at the **pom.xml** file. We need to add following sections:
 
