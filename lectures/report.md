@@ -27,20 +27,27 @@ Here you can define your custom requirements. Mandatory entries are:
 *  `generatedHtmlReportDirectory` - Indicate directory where final HTML file report will be stored after execution. This report is created based on json defined in sourceJsonReportDirectory
 
 Additionally you can define following details:
-- test name
-- log level
-- css file for new format of the report
-- custom properties and many more
-For more details look at:  https://github.com/trivago/cluecumber-report-plugin
+
+
+*  test name
+*  log level
+*  css file for new format of the report
+*  custom properties and many more
+
+For more details look at:  
+[Cluecumber report](https://github.com/trivago/cluecumber-report-plugin)
+
 
 
 2. In order to give suggestion to Cucumber where is json file you need to add @Cucumber Option()
+
 @CucumberOptions( plugin = {"json:target/cucumberReport/cucumber.json"},
 
 3. Run your tests using RunTest class (this class is annotated by @CucumberOptions)
 
 4. Using Terminal panel in Intelij run this command to generate HTML report based on json file:
-mvn cluecumber-report:reporting
+
+        mvn cluecumber-report:reporting
 
 
 
