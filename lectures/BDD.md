@@ -1,4 +1,4 @@
-# 2. Behavior-driven development (BDD) - introduction
+## 2. Behavior-driven development (BDD) - introduction
 
 ### Gherkin style
 
