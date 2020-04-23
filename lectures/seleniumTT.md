@@ -82,42 +82,51 @@ inp_emailPurchase.get(1)
 
 Look at screenshot below. Here you can see address form. When some address has been provided it is saved like this:
 
+![trap](./img/bdd/address1.jpg)
 
 But the same form looks differently when user has not provided any address or current address was deleted:
 
 
-
+![trap](./img/bdd/address2.jpg)
 
 
 During run time we need to recognize if address is already provided or not. 
 This is my proposal to solve this issue:
 
+```java
 public boolean isAddressAlreadyAdded()
 {
-    List<WebElement> address = driver.findElements(By.xpath("//*[@class='address-											footer']//child::a"));
+    List<WebElement> address = driver.findElements(By.xpath("//*[@class='address-footer']//child::a"));
     if (address.size() != 0)
 	 {
        	return true;
     	 }	
 	return false;
 }
+```
 
-Trap 3: Retrieve total price
+**Trap 3: Retrieve total price**
+
 Summary of your order is presented within web table. 
 Look at HTML representation of the table:
 
-
+![trap](./img/bdd/totalPrice2.jpg)
 
 In order to confirm that total price is calculated properly ($26.12)  we should identify proper cell and get the value. 
 First of all pay attention on xpath. It is quite complex:
+
+```java
 //*[text()='Amount']/following-sibling::dd
+```
 
 Next we need save all element that meet this condition in List. Here is my proposal to solve this problem:
 
+```java
 public String getTotalPrice()
  {
-    List<WebElement> confirmationTable = 							driver.findElements(By.xpath("//*[text()='Amount']/following-sibling::dd"));
+    List<WebElement> confirmationTable = driver.findElements(By.xpath("//*[text()='Amount']/following-sibling::dd"));
     WebElement totalPrice=confirmationTable.get(0);
     log.info("Total Price = " + totalPrice.getText());
     return totalPrice.getText();
 }
+```
