@@ -27,8 +27,8 @@ Set following mandatory options:
 
 Now you have IDE ready to run feature file. Right click on that and click “Run Feature login. ” option. 
 
-**NOTE!**
-Please have in mind that all scenarios within feature file will be executed regardless tags.  
+        NOTE!
+        Please have in mind that all scenarios within feature file will be executed regardless tags.  
 
 2. **Cucumber runner class - It is RECOMMENDED way.** 
 
@@ -65,8 +65,8 @@ For more details refer to:
 
 
 
-**TIP:**
-Using maven command we can combine two goals: test and report plugin. After that all desired test scenarios are running and test report is created after execution. 
+        TIP:
+        Using maven command we can combine two goals: test and report plugin. After that all desired test scenarios are running and test report is created after execution. 
 
         mvn test cluecumber-report:reporting
 
