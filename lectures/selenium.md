@@ -68,5 +68,5 @@ public void brad_Pitt_type_his_correct_credentials() {
 ```
 
         TIP: 
-        In the example below login and password ("brad@op.pl", "12345") have been provided directly. 
+        In the example above login and password ("brad@op.pl", "12345") have been provided directly. 
         Of course you can use external source of test data (file, database)
