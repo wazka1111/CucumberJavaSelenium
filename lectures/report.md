@@ -48,23 +48,9 @@ For more details look at:
 4. Using Terminal panel in Intelij run this command to generate HTML report based on json file:
 
         mvn cluecumber-report:reporting
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
+        
+![report](./img/bdd/terminal.png)
 
 
 
@@ -73,52 +59,14 @@ For more details look at:
 In most cases it is target folder within the project. 
 Open in any browser index.html file:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![report](./img/bdd/index.png)
 
 
 
 6. Here is example of report view:
+
+![report](./img/bdd/report.png) 
+
 
 
 
