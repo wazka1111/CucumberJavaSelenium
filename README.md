@@ -36,5 +36,13 @@ I have prepared following scenarios:
 
 ## 1. [Installation maven](./lectures/installation.md)
 ## 2. [Behavior-driven development (BDD) - introduction](./lectures/BDD.md)
+## 3. [Hook](./lectures/hook.md)
+## 4. [Tag](./lectures/tag.md)
+## 5. [Running test cases](./lectures/run.md)
+## 6. [Reporting](./lectures/report.md)
+## 7. [Selenium Project](./lectures/selenium.md)
+## 8. [Selenium – Tricks and Traps](./lectures/seleniumTT.md)
+
+
 
 
