@@ -18,10 +18,13 @@ Now let’s make some update in our project and configure Cluecumber.
 ![report](./img/bdd/pom.jpg)
 
 
-Please look at <configuration> section.
+Please look at `<configuration>` section.
 Here you can define your custom requirements. Mandatory entries are:
-sourceJsonReportDirectory – Indicate directory where json file is stored after execution
-generatedHtmlReportDirectory - Indicate directory where final HTML file report will be stored after execution. This report is created based on json defined in sourceJsonReportDirectory
+
+
+*  `sourceJsonReportDirectory` – Indicate directory where json file is stored after execution
+
+*  `generatedHtmlReportDirectory` - Indicate directory where final HTML file report will be stored after execution. This report is created based on json defined in sourceJsonReportDirectory
 
 Additionally you can define following details:
 - test name
