@@ -4,8 +4,11 @@ Using tags eg: **@regression, @api, @gui, @sanity** we can organize our set of s
 
 Before Feature, Scenario, Scenario Outline, Examples write one or more @your_tag_name
 
+![imperative](./img/bdd/tag.jpg)
 
 
+Here is maven command that support tags: 
 
-Here is maven command that support tags: Maven plugin will run only those scenarios with 2 tags at the same time:
-mvn test -Dcucumber.filter.tags="@student and @create"
+        mvn test -Dcucumber.filter.tags="@student and @create"
+        
+Maven plugin will run only those scenarios with 2 tags at the same time
