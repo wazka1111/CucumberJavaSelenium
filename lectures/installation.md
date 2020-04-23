@@ -7,16 +7,17 @@ Now let’s take a look at dependencies within the project. We are going to use 
 
 Here we can define properties for java version.
 
-**TIP !!!**
-Currently there is still some annoying issue in Intelij. When you made any change in pom.xml file IDE automatically keep change java compiler version to 1.5. To fix it you need manually change project module settings. In order to avoid this you can define maven-compiler-plugin and indicate source and target to your desired java version. In my case it is 11. 
+        TIP !!!
+        Currently there is still some annoying issue in Intelij. 
+        When you made any change in pom.xml file IDE automatically keep change java compiler version to 1.5. 
+        To fix it you need manually change project module settings. In order to avoid this you can define maven-compiler-plugin and indicate source and target 
+        to your desired java version. In my case it is 11. 
 
 
 **2.  plugins:**
 
 *   maven-compiler-plugin
-
 *   maven-surefire-plugin
-
 *  cluecumber-report-plugin – for reporting. We will cover that part in next lecture.
 
 **3. dependencies:**
