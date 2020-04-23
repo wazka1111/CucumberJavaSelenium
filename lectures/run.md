@@ -5,23 +5,25 @@ Now let’s consider how we can run our test cases. There are 3 ways. Choose the
 
 1. **Feature file run**
 
-Currently we have one feature file: Login.feature.  In order to run our feature we need external plugin to Intelij. Navigate to File→Settings→Plugins and search Cucumber for java plugin. 
+Currently we have one feature file: Login.feature.  In order to run our feature we need external plugin to Intelij. Navigate to File→Settings→Plugins and search **Cucumber for java plugin.** 
 
+![run](./img/bdd/cucumberpluginide.jpg)
 
 
 Once plugin is installed jump to its edit configuration panel: Run→Edit Configurations…
+
+![run](./img/bdd/editconfiguration.jpg)
 
 
 
 
 Set following mandatory options:
 
-
-*  Main class:	io.cucumber.core.cli.Main	This is main class from Cucumber library that handle runner operation. 
-
-*  Glue:	stepDefinition	This is place (your package name) where step definition class is stored.
-
-*  Feature or folder path:	C:/Users/DH/Desktop/cucumberSeleniumDemo/src/test/java/features/Login.feature	This is full path to your feature file. 
+| Label | Value | Comment |
+| ------ | ------ |------ |
+| Main class: | io.cucumber.core.cli.Main | This is main class from Cucumber library that handle runner operation.  |
+| Glue: | stepDefinition | This is place (your package name) where step definition class is stored. |
+| Feature or folder path: | C:/Users/DH/Desktop/cucumberSeleniumDemo/src/test/java/features/Login.feature | This is full path to your feature file.  |
 
 
 
@@ -48,7 +50,7 @@ Benefit of this solution is define additional option within @CucumberOptions():
 *  glue
 *  tags
 
-
+![run](./img/bdd/runclass.jpg)
 
 For more details refer to:
 [Cucumber documentation](https://cucumber.io/docs/cucumber/api/?sbsearch=cucumberOptions#list-configuration-options)
@@ -58,6 +60,8 @@ For more details refer to:
   You can use maven plugin to run runTest class.  In order to do that use maven command:
         mvn test 
   either in terminal panel or maven window in IDE:
+  
+![run](./img/bdd/mavenrunner.jpg)
 
 
 For more details refer to:
