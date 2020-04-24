@@ -27,7 +27,7 @@ For more details please refer to:
 Duplicated web elements**
 
 
-Sometimes it’s happen that two or more webElements on a page has exactly the same attributes. Unique identification is a challenge in this case.
+Sometimes it’s happen that two or more webElements on a page have exactly the same attributes. Unique identification is a challenge in this case.
 I’ve found that case on the test page: 
 
 Email and Password input fields are duplicated. Depending on the part of Personal Information tab we can find one active and second inactive the same element:
