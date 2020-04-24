@@ -30,6 +30,9 @@ I have prepared following scenarios:
 * [x]  Login scenario – where I want to login to user account
     
 * [x]  Purchase scenario – where I want to order men’s Tshirt.
+ 
+## So, go ahead clone the project into your local machine and let's start this course.
+
 
 
 # Agenda
