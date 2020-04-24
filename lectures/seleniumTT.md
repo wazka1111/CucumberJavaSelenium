@@ -119,7 +119,7 @@ First of all pay attention on xpath. It is quite complex:
 //*[text()='Amount']/following-sibling::dd
 ```
 
-Next we need save all element that meet this condition in List. Here is my proposal to solve this problem:
+Next we need save all elements that meet this condition in List. Here is my proposal to solve this problem:
 
 ```java
 public String getTotalPrice()
