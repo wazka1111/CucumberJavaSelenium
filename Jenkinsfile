@@ -7,7 +7,7 @@ pipeline{
     stage("build")
     {
       steps{
-        echo 'building the application' ${ENVIRONMENT_URL}
+        echo "building the application ${ENVIRONMENT_URL}"
       }
     }
       stage("test")
@@ -18,22 +18,22 @@ pipeline{
       }
     }
       steps{
-        echo 'testing the application IN master BRANCH' ${ENVIRONMENT_URL}    
+        echo "testing the application IN master BRANCH ${ENVIRONMENT_URL}"    
       }
     }
       stage("deploy")
     {
       steps{
-        echo 'deploying the application' ${ENVIRONMENT_URL}
+        echo "deploying the application ${ENVIRONMENT_URL}"
       }
     }
   }
   post{
     always{
-      echo 'post running always' ${ENVIRONMENT_URL}
+      echo "post running always ${ENVIRONMENT_URL}"
     }
     success{
-     echo 'post running for success' ${ENVIRONMENT_URL}
+     echo "post running for success ${ENVIRONMENT_URL}"
     }
   }
 }
