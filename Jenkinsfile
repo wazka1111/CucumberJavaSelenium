@@ -8,9 +8,14 @@ pipeline{
       }
     }
       stage("test")
-    {
+    { 
+      when{
+      expression{
+        BRANCH_NAME == 'MASTER'
+      }
+    }
       steps{
-        echo 'testing the application'     
+        echo 'testing the application IN master BRANCH'     
       }
     }
       stage("deploy")
@@ -18,6 +23,14 @@ pipeline{
       steps{
         echo 'deploying the application'
       }
+    }
+  }
+  post{
+    always{
+      echo 'post running always' 
+    }
+    success{
+     echo 'post running for success' 
     }
   }
 }
