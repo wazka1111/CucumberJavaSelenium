@@ -1,5 +1,8 @@
 pipeline{
   agent any
+  tools {
+    maven 'Maven' 
+  }
   environment {
    ENVIRONMENT_URL = 'merge10' 
   }
@@ -18,7 +21,8 @@ pipeline{
       }
     }
       steps{
-        echo "testing the application IN master BRANCH ${ENVIRONMENT_URL}"    
+        echo "testing the application IN master BRANCH ${ENVIRONMENT_URL}" 
+        sh "mvn test"
       }
     }
       stage("deploy")
