@@ -11,7 +11,7 @@ pipeline{
     { 
       when{
       expression{
-        BRANCH_NAME == 'MASTER'
+        BRANCH_NAME == 'master'
       }
     }
       steps{
