@@ -23,7 +23,7 @@ pipeline{
       steps{
         echo "testing the application IN master BRANCH ${ENVIRONMENT_URL}" 
         sh "cd /var/lib/jenkins/workspace/SeleniumCucumberPipelinee_master/libs"
-        sh "sudo chown pi chromedriver.exe"
+        sh "chown pi chromedriver.exe"
         sh "chmod +x chromedriver.exe"
         sh "mvn test"
       }
