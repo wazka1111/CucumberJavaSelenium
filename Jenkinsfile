@@ -25,6 +25,8 @@ pipeline{
         echo "testing the application IN master BRANCH ${ENVIRONMENT_URL}" 
         sh "cd /var/lib/jenkins/workspace/SeleniumCucumberPipelinee_master/libs/"
         sh "ls -l"
+        sh "cd libs/"
+        sh "ls -l"
         sh "sudo chmod +x chromedriver.exe"
         sh "mvn test"
       }
