@@ -12,7 +12,7 @@ pipeline{
       steps{
         echo "building the application ${ENVIRONMENT_URL}"
         sh "whoami"
-        sh "/var/lib/jenkins/workspace/SeleniumCucumberPipelinee_master/img"
+        sh "/var/lib/jenkins/workspace/SeleniumCucumberPipelinee_master/libs"
         sh "pwd"
       }
     }
