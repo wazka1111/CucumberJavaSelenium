@@ -11,6 +11,7 @@ pipeline{
     {
       steps{
         echo "building the application ${ENVIRONMENT_URL}"
+        sh "whoami"
       }
     }
       stage("test")
